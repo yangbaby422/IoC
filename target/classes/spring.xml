@@ -15,4 +15,5 @@
     <bean id="messagePrinter" class="com.spring.IoC.di.MessagePrinter">
         <constructor-arg name="service" ref="messageServiceImpl"/>
     </bean>
+
 </beans>
