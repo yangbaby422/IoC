@@ -8,11 +8,11 @@
        http://www.springframework.org/schema/context/spring-context.xsd ">
 
     <!--定义bean-->
-    <bean id="messageServiceImpl" class="com.spring.IoC.di.service.MessageServiceImpl">
+    <bean id="messageServiceImpl" class="com.spring.aop.IoC.di.service.MessageServiceImpl">
         <constructor-arg name="username" value="Chen Yang"/>
         <constructor-arg name="age" value="20"/>
     </bean>
-    <bean id="messagePrinter" class="com.spring.IoC.di.MessagePrinter">
+    <bean id="messagePrinter" class="com.spring.aop.IoC.di.MessagePrinter">
         <constructor-arg name="service" ref="messageServiceImpl"/>
     </bean>
 

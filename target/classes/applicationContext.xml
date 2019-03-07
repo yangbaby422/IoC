@@ -66,4 +66,10 @@
         </property>
 
     </bean>
+
+    <!--配置一个Max的bean-->
+    <bean id="max" class="com.spring.IoC.exercise.Max">
+        <constructor-arg name="a" value="5"/>
+        <constructor-arg name="b" value="3"/>
+    </bean>
 </beans>
