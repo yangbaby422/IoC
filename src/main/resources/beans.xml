@@ -7,13 +7,13 @@
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd ">
 
-    <!--定义bean-->
-    <bean id="messageServiceImpl" class="com.spring.orm.aop.IoC.di.service.MessageServiceImpl">
-        <constructor-arg name="username" value="Chen Yang"/>
-        <constructor-arg name="age" value="20"/>
+    <bean id="user" class="com.spring.orm.aop.IoC.exercise.User">
+        <constructor-arg name="account" value="baby"/>
+        <constructor-arg name="password" value="123"/>
     </bean>
-    <bean id="messagePrinter" class="com.spring.orm.aop.IoC.di.MessagePrinter">
-        <constructor-arg name="service" ref="messageServiceImpl"/>
+
+    <bean id="userlogin" class="com.spring.orm.aop.IoC.exercise.UserLogin">
+        <property name="user" ref="user"/>
     </bean>
 
 </beans>
